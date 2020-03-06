@@ -18,6 +18,24 @@ soong_namespace {
 }
 
 dex_import {
+    name: "QPerformance",
+    owner: "realme",
+    jars: ["proprietary/framework/QPerformance.jar"],
+}
+
+soong_namespace {
+}
+
+dex_import {
+    name: "UxPerformance",
+    owner: "realme",
+    jars: ["proprietary/framework/UxPerformance.jar"],
+}
+
+soong_namespace {
+}
+
+dex_import {
     name: "WfdCommon",
     owner: "realme",
     jars: ["proprietary/framework/WfdCommon.jar"],
