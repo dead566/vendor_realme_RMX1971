@@ -19,8 +19,8 @@
       "min_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "0"
       },
-      "max_bus_speed_khz":{ "type": "int", "ver": "0",
-        "data": "3300"
+      "max_bus_speed_khz":{ "type": "int", "ver": "3",
+        "data": "9600"
       },
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"
@@ -28,8 +28,8 @@
       "dri_irq_num":{ "type": "int", "ver": "0",
         "data": "118"
       },
-      "irq_pull_type":{ "type": "int", "ver": "1",
-        "data": "0"
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
       },
       "irq_is_chip_pin":{ "type": "int", "ver": "0",
         "data": "1"
@@ -41,10 +41,13 @@
         "data": "0"
       },
       "num_rail":{ "type": "int", "ver": "0",
-        "data": "1"
+        "data": "2"
       },
       "rail_on_state":{ "type": "int", "ver": "0",
         "data": "1"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
       },
       "vddio_rail":{ "type": "str", "ver": "0",
         "data": "/pmic/client/sensor_vddio"
@@ -55,24 +58,85 @@
     },
     ".orient":{
       "owner": "bmi160",
-      "x":{ "type": "str", "ver": "0",
+      "x":{ "type": "str", "ver": "5",
         "data": "+y"
       },
-      "y":{ "type": "str", "ver": "0",
+      "y":{ "type": "str", "ver": "5",
         "data": "+x"
       },
-      "z":{ "type": "str", "ver": "0",
+      "z":{ "type": "str", "ver": "5",
         "data": "-z"
-      },
+      }
+    },
     ".orient_19691":{
       "owner": "bmi160",
-      "x":{ "type": "str", "ver": "0",
+      "x":{ "type": "str", "ver": "6",
         "data": "+y"
       },
-      "y":{ "type": "str", "ver": "0",
+      "y":{ "type": "str", "ver": "6",
         "data": "-x"
       },
-      "z":{ "type": "str", "ver": "0",
+      "z":{ "type": "str", "ver": "6",
+        "data": "+z"
+      }
+    },
+    ".orient_18041":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "4",
+        "data": "-y"
+      },
+      "y":{ "type": "str", "ver": "4",
+        "data": "-x"
+      },
+      "z":{ "type": "str", "ver": "4",
+        "data": "-z"
+      }
+    },
+    ".orient_t1":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "1",
+        "data": "+x"
+      },
+      "y":{ "type": "str", "ver": "1",
+        "data": "-y"
+      },
+      "z":{ "type": "str", "ver": "1",
+        "data": "-z"
+      }
+    },
+    ".orient_097":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "6",
+        "data": "-y"
+      },
+      "y":{ "type": "str", "ver": "6",
+        "data": "-x"
+      },
+      "z":{ "type": "str", "ver": "4",
+        "data": "-z"
+      }
+    },
+    ".orient_383":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "9",
+        "data": "-x"
+      },
+      "y":{ "type": "str", "ver": "7",
+        "data": "-Y"
+      },
+      "z":{ "type": "str", "ver": "5",
+        "data": "-z"
+      }
+    },
+    ".orient_19651":{
+      "owner": "bmi160",
+      "x":{ "type": "str", "ver": "1",
+        "data": "-y"
+      },
+      "y":{ "type": "str", "ver": "1",
+        "data": "+x"
+      },
+      "z":{ "type": "str", "ver": "1",
         "data": "+z"
       }
     },
@@ -196,13 +260,13 @@
       ".config":{
         "owner": "bmi160",
         "thresh":{ "type": "flt", "ver": "0",
-            "data": "0.3067"
+            "data": "0.6132"
         },
         "disable":{ "type": "int", "ver": "0",
           "data": "0"
         },
         "win":{ "type": "flt", "ver": "0",
-          "data": "0.02"
+          "data": "0.0"
         }
       }
     },
