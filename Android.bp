@@ -175,6 +175,16 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "SoterService",
+	owner: "realme",
+	apk: "proprietary/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "realme",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
@@ -211,7 +221,7 @@ android_app_import {
 	name: "TimeService",
 	owner: "realme",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
+	certificate: ":timeservice_app_cert",
 	dex_preopt: {
 		enabled: false,
 	},
