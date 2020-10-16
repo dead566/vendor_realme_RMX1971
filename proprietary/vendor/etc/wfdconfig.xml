@@ -350,8 +350,8 @@
             </BIT7>
           <!-- 1920x1080p60  -->
             <BIT8>
-                <MinBitrate>7000000</MinBitrate>
-                <MaxBitrate>13000000</MaxBitrate>
+                <MinBitrate>10000000</MinBitrate>
+                <MaxBitrate>20000000</MaxBitrate>
             </BIT8>
           <!-- 1920x1080i60  -->
             <BIT9>
@@ -698,11 +698,7 @@
         To disable/enable audio stream playback
         support during power suspend - 0 or 1
     -->
-
-    <!-- #ifdef VENDOR_EDIT -->
-    <!-- YunMang.Xiao@PSW.MM.AudioServer.Base.1297775, 2019/09/02, Modify for audio should still playing on TV after screen off -->
     <AudioStreamInSuspend>1</AudioStreamInSuspend>
-    <!-- #endif //VENDOR_EDIT -->
 
     <!--
         Compensation delay for audio
